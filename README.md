@@ -1,8 +1,4 @@
- ____            _    __       _ _        __        __   _         _ _       
-|  _ \ ___  _ __| |_ / _| ___ | (_) ___   \ \      / /__| |__  ___(_) |_ ___ 
-| |_) / _ \| '__| __| |_ / _ \| | |/ _ \   \ \ /\ / / _ \ '_ \/ __| | __/ _ \
-|  __/ (_) | |  | |_|  _| (_) | | | (_) |   \ V  V /  __/ |_) \__ \ | ||  __/
-|_|   \___/|_|   \__|_|  \___/|_|_|\___/     \_/\_/ \___|_.__/|___/_|\__\___|
+<h1>Portfolio Website</h1>
 
 For my personal project I have decided to create a website which displays a portfolio page for my webistes, an about me page that introduces me and my work and a blog where I write about pop culture refernces and subjects that have interested me recently!
 
