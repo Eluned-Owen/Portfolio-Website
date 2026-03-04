@@ -1,0 +1,676 @@
+/* Multipage customisation */
+
+/* Font found at "https://fonts.google.com/specimen/Orbitron" */
+@font-face {
+    font-family: orbitron;
+    src: url("Lexend_Mega,Orbitron/Orbitron/Orbitron-VariableFont_wght.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+/* Home page ------------------------------------------ */
+/* Home page customisation */
+.homeBG {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.7;
+}
+
+.homeBlob{
+    display:inline-flex;
+    position:absolute;
+    z-index: 0;
+    top: 11vh;
+    left: 18vw;
+    width: 65%;
+    height: 70%;
+}
+
+.animatedTrianglesTopLeft{
+    display:inline-flex;
+    position:absolute;
+    top: 5vh;
+    left: 2vw;
+    width: 25%;
+}
+
+.animatedTrianglesBottomRight{
+    display:inline-flex;
+    position:absolute;
+    top: 55vh;
+    left: 75vw;
+    width: 25%;
+    transform: scaleX(-1);
+    rotate: 80deg; 
+    z-index: 1;
+}
+
+/* Name and Buttons */
+.name{
+    position: absolute;
+    left: 55vw;
+    top: 13vh;
+    width: 35%;
+    filter: drop-shadow(-10px 10px #5d0925);
+    
+}
+.aboutMe{
+    position: absolute;
+    left: 15vw;
+    top: 2vh;
+    width: 35%;
+    filter: drop-shadow(10px 3px #5d0925);
+}
+
+/* Adding glow when cursor hovers for visual feedback */
+.aboutMe:hover{
+    filter: drop-shadow(0px 0px 15px #de3e7e); 
+    transition-duration: 0.5s;
+}
+
+.portfolio{
+    position: absolute;
+    left: 17vw;
+    top: 33vh;
+    width: 35%;
+    filter: drop-shadow(10px 10px #5d0925);
+}
+
+.portfolio:hover{
+    filter: drop-shadow(0px 0px 15px #de3e7e);
+    Transition-duration: 0.5s;
+    
+}
+
+.blog{
+    position: absolute;
+    left: 24vw;
+    top: 61vh;
+    width: 35%;
+    filter: drop-shadow(10px 10px #5d0925);
+}
+
+.blog:hover{
+    transform: translate(0, -10px);
+    filter: drop-shadow(0px 0px 20px #de3e7e);
+    Transition-duration: 0.5s;
+    
+}
+
+/*Tablet View*/
+@media (max-width: 900px){
+    .animatedTrianglesBottomRight{
+        left: 75vw;
+        top: 70vh;
+    }
+
+    .name{
+        left: 55vw;
+        top: 22vh;
+    }
+
+    .aboutMe{
+        left: 18vw;
+        top: 17vh;
+    }
+
+    .portfolio{
+        left: 21vw;
+        top: 36vh;
+    }
+
+    .blog{
+        left: 24vw;
+        top: 56vh;
+    }
+
+}
+
+/* Mobile viewer */
+@media (max-width: 600px) {
+    .animatedTrianglesTopLeft{
+        display:none;
+    }
+    
+    .animatedTrianglesBottomRight{
+        display:none;
+    }
+
+    .homeBlob{
+        left: 10vw;
+        width:80%;
+        height:80%;
+    }
+
+    .name{
+        position: absolute;
+        left: 28vw;
+        top: 10vh;
+        width: 50%;
+    }
+    
+    .aboutMe{
+        left: 34vw;
+        top: 40vh;
+    }
+
+    .portfolio{
+        left: 34vw;
+        top: 55vh;
+    }
+
+    .blog{
+        left: 34vw;
+        top: 70vh;
+    }
+}
+
+/*ABOUT ME! ------------------------------*/
+.aboutMeBG {
+    padding: 0;
+    margin: 0;
+    width: 98vw;
+    height: 100vh;
+  
+}
+
+.star{
+    display: flex;
+    position: absolute;
+    width: 10vw;
+    top: 15vh;
+    left:10vw;
+    filter: hue-rotate(40deg);
+}
+
+.bearAboutMe{
+    display: inline-block;
+    position: absolute;
+    width: 10%;
+    top: 10vh;
+    left: 45vw;
+    filter: drop-shadow(20px 10px #5d0925);
+}
+
+.displayAboutMe{
+    display: inline-block;
+    position: absolute;
+    top: 8vh;
+    left: 25vw;
+    width: 55%;
+    height: 80%;
+    filter: drop-shadow(20px 10px #5d0925)
+}
+
+.homeBtnAboutMe{
+    display: inline-block;
+    position: absolute;
+    width: 25%;
+    top: 66%;
+    left: 4%;
+    filter: drop-shadow(20px 10px #5d0925);
+}
+
+.homeBtnAboutMe:hover{
+    filter: drop-shadow(0px 0px 10px #de3e7e);
+    Transition-duration: 0.3s;
+    
+}
+
+.aboutMeText{
+    display: inline-block;
+    position: absolute;
+    top: -10%;
+    left: 28%;
+    width: 70%;
+    height: 100%;
+    scale: 0.78;
+}
+
+.aboutMeText p {
+    display: inline-block;
+    position: absolute;
+    color: white;
+    scale: 1.5;
+    width: 50%;
+    top: 50%;
+    font-family: orbitron;
+
+}
+
+.grid-container-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px;
+    margin: 50px;
+}
+
+.left{
+    display: inline-block;
+    position: absolute;
+    top: 90%;
+}
+
+.right{
+    display: inline-block;
+    position: absolute;
+    top: 90%;
+    left: 40%;
+
+}
+/* Tablet viewer */
+@media (max-width: 900px){
+    .displayAboutMe{
+        top: 8vh;
+        left: 25vw;
+        width: 55%;
+        height: 75%;
+    }
+
+    .homeBtnAboutMe{
+        width: 25%;
+        top: 85vh;
+        left: 37vw;
+    }
+
+    .aboutMeText{
+        top: -17vh;
+        left: 28vw;
+
+    }
+
+    .left{
+        display: none;
+    }
+    
+    .right{
+        display: none;
+    
+    }
+}
+
+/* mobile viewer */
+@media (max-width: 600px){
+    .displayAboutMe{
+        top: 8vh;
+        left: 20vw;
+        width: 60%;
+        height: 80%;
+    }
+
+    .homeBtnAboutMe{
+        width: 30%;
+        top: 85vh;
+        left: 37vw;
+    }
+
+    .aboutMeText{
+        top: -17vh;
+        left: 28vw;
+
+    }
+
+}
+
+/*Portfoilo! -------------------------------------------*/
+
+.portfolioBG {
+    padding: 0;
+    margin: 0;
+    width: 98vw;
+    height: 100vh;
+    filter: grayscale(30%);
+    filter: hue-rotate(90deg);
+}
+
+.portfolioBG img {
+    width: 100%;    
+    height: 100%;      
+    padding: 0;
+    margin: 0;
+    display: block;   
+}
+
+.MainElmsContainer {
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 5vh;
+    filter: drop-shadow(20px 10px 1px #5d0925);
+}
+
+.bearPortfolio{
+    display: inline-block;
+    position: absolute;
+    width: 25%;
+    top: 25vh;
+    left: 15vw;
+    width: 15%;
+}
+
+.websitesBtn{
+    display: inline-block;
+    position: absolute;
+    width: 25%;
+    top: 35%;
+    left: 6%;
+    
+}
+
+.websitesBtn:hover{
+    filter: drop-shadow(0px 0px 10px #de3e7e);
+    Transition-duration: 0.3s;
+}
+
+.codingBtn:hover{
+    filter: drop-shadow(0px 0px 10px #de3e7e);
+    Transition-duration: 0.3s;
+}
+
+.homeBtn{
+    display: inline-block;
+    position: absolute;
+    width: 25%;
+    top: 55%;
+    left: 6%;
+}
+
+.homeBtn:hover{
+    filter: drop-shadow(0px 0px 10px #de3e7e);
+    Transition-duration: 0.3s;
+    
+}
+
+.displayPortfolio{
+    display: inline-block;
+    position: absolute;
+    top: 10%;
+    left: 33%;
+    width: 55%;
+    height: 80%;
+}
+
+/* Customising portfolio API  */
+.portfolioText {
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-around;  
+    position: absolute;
+    top: -14vh;
+    left: 23vw;
+    width: 70%;
+    scale: 0.50;
+    color: white;
+    gap: 20px; 
+}
+
+/* created title, description, image containers for each row of API's data */
+.pair-container {
+    display: flex; 
+    flex-direction: column;  
+    align-items: center;  
+    width: 45%;
+    margin-bottom: 0px;  
+}
+
+/* Selecting the 3rd pair specifically so that it'll appear below the first two pairs */
+.pair-container:nth-child(3) {
+    width: 100%; 
+    justify-content: center;  
+}
+
+/* Title */
+.pair-container h2 {
+    font-size: 2.5em; 
+    text-align: center;
+    margin-top: 10px; 
+    font-family: orbitron;
+}
+
+/* Description */
+.pair-container p {
+    font-size: 2em; 
+    text-align: center;
+    margin-top: -5px;  
+    font-family: orbitron;
+}
+
+/* Image */
+.pair-container img {
+    width: 100%; 
+    height: auto; 
+    filter: drop-shadow(20px 10px 1px #5d0925);
+}
+
+.squareDeco{
+    display: flex;
+    position:absolute;
+    z-index: 0;
+    width: 40%;
+    top: 20vh;
+    left: 12vw;
+    filter: drop-shadow(20px 10px 1px #5d0925);
+}
+
+/* Tablet viewer */
+@media (max-width: 900px){
+    .displayPortfolio{
+        top: 10vh;
+        left: 25vw;
+        width: 55%;
+        height: 65%;
+    } 
+    .portfolioText {
+        left: 17vw; 
+    }
+
+    .homeBtn{
+        width: 25%;
+        top: 75vh;
+        left: 40vw;
+    }
+    .squareDeco{
+        width: 60%;
+        top: 20vh;
+        left: -5vw;
+        filter: drop-shadow(20px 10px 1px #5d0925);
+    }
+    .bearPortfolio{
+        left: 70vw;
+        top:60vh;
+    }
+}
+
+/* Mobile viewers */
+@media (max-width: 600px){
+    .portfolioText {
+        top: -10vh; 
+    }
+    .homeBtn{
+        width: 40%;
+        top: 75vh;
+        left: 33vw;
+    }
+}
+
+/*BLOG----------------------------------------*/
+.blogBG {
+    padding: 0;
+    margin: 0;
+    width: 98vw;
+    height: 100vh;
+    filter: grayscale(30%);
+    filter: hue-rotate(300deg);
+}
+
+
+.bearBlog{
+    display: inline-block;
+    position: absolute;
+    width: 25%;
+    top: 25%;
+    left: 2%;
+    scale: 0.6;
+    filter: drop-shadow(20px 10px #5d0925);
+    rotate: -5deg;
+}
+
+.displayBlog{
+    display: inline-block;
+    position: absolute;
+    top:-10vh;
+    left: 10vw;
+    scale: 0.7;
+    height: 125%;
+    width:90%;
+    filter: drop-shadow(20px 10px #5d0925);
+    filter: hue-rotate(330deg);
+}
+
+.homeBtnBlog{
+    display: inline-block;
+    position: absolute;
+    width: 25%;
+    top: 66%;
+    left: 4%;
+    filter: drop-shadow(20px 10px #5d0925);
+}
+
+.homeBtnBlog:hover{
+    filter: drop-shadow(0px 0px 10px #de3e7e);
+    Transition-duration: 0.3s;
+    
+}
+
+.blogText{
+    display: inline-block;
+    position: absolute;
+    top: 1%;
+    left: 0%;
+    scale: 0.78;
+    height: 105vh;
+    overflow-y: auto; /* Ensure vertical scrolling works */
+    overflow-x: hidden; /* Disables horizontal scrolling */
+    width: 95vw; 
+    font-family: orbitron;
+}
+
+.blogRow {
+    display: block;
+    margin-bottom: 100px; 
+}
+
+.blogRow2 {
+    display: block;
+
+}
+
+/*Title*/
+.blogText h2 {
+    display: inline-block;
+    position: relative;
+    color: white;
+    scale: 1.3;
+    left: 14%;
+    top: -90vh;
+    rotate: 90deg;
+    margin-bottom: 300px; 
+
+}
+
+/*date*/
+.blogText h3 {
+    display: inline-block;
+    position: relative;
+    color: white;
+    scale: 0.5;
+    left: -3%;
+    top: -30vh;
+    rotate: 90deg;
+    margin-bottom: 250px; 
+
+}
+
+/*text*/
+.blogText p {
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-size: 1.5em;
+    width: 50%; 
+    top: 100%;
+    left: 2%;
+    
+}
+
+/* Tablet view */
+@media (max-width: 900px){
+    .blogText{
+        height: 100%;
+    }
+    .blogText p{
+        left: 40vw;
+    }
+
+    .blogrow1 p{
+        left: 70vw;
+    }
+
+    .blogText h2{
+        top: 120vh;
+    }
+
+    .blogText h3{
+        top: 170vh;
+        left: -15vw;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 600px){
+    .displayBlog{
+        top:-3vh;
+        left: 10vw;
+        scale: 0.7;
+        height: 100%;
+        width:90%;
+    }
+
+    .blogText{
+        top: 6vh;
+        height: 80%;
+    }
+
+    .blogText h2{
+        left: 5vw;
+    }
+
+    .blogText h3{
+        left: -40vw;
+    }
+
+    .homeBtnBlog{
+        width: 35%;
+        top: 80vh;
+        left: 35vw;;
+    }
+
+    .bearBlog{
+        width: 35%;
+        top: 70%;
+        left: 2%;
+    }
+    
+}
+
